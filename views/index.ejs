@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Weekly Calendar</h1>
+    <a href="/Home/New">New</a>
+    <table>
+        <tr>
+            <th>Sunday</th>
+            <% for (let i = 0; i < sunday.length; i++) {%>
+                    <td><a href="/Homes/<%=sunday[i].id%>"><%=sunday.id.name%></a></td>
+            <% } %> 
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <% for (let i = 0; i < monday.length; i++) {%>
+                    <td><a href="/Homes/<%=monday[i].id%>"></a></td>
+            <% } %> 
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <% for (let i = 0; i < tuesday.length; i++) {%>
+                    <td><a href="/Homes/<%=tuesday[i].id%>"></a></td>
+            <% } %> 
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <% for (let i = 0; i < wednesday.length; i++) {%>
+                    <td><a href="/Homes/<%=wednesday[i].id%>"></a></td>
+            <% } %> 
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <% for (let i = 0; i < thursday.length; i++) {%>
+                    <td><a href="/Homes/<%=thursday[i].id%>"></a></td>
+            <% } %> 
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <% for (let i = 0; i < friday.length; i++) {%>
+                    <td><a href="/Homes/<%=friday[i].id%>"></a></td>
+            <% } %> 
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <% for (let i = 0; i < saturday.length; i++) {%>
+                    <td><a href="/Homes/<%=saturday[i].id%>"></a></td>
+            <% } %> 
+        </tr>
+
+    </table>
+
+</body>
+</html>

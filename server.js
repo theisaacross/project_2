@@ -34,7 +34,7 @@ app.use(methodOverride('_method')) // lets us use method override
 
 // Controllers
 const eventController = require('./controllers/eventController') // connecting controller
-app.use('/home', eventController) // when at home, use eventController
+app.use('/Home', eventController) // when at home, use eventController
 
 
 
