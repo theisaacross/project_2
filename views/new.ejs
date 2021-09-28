@@ -11,17 +11,17 @@
     <form action="/Home" method="POST">
         <label for="name" >
             Name: 
-            <input type="text" required="true">
+            <input type="text" required="true" name="name">
         </label>
         <label for='description'>
             Description: 
-            <input type="text">
+            <input type="text" name="description">
         </label>
         <label for="weekday" >
             Weekday: 
-            <input type="text" required="true">
+            <input type="text" required="true" name="weekday">
         </label>
-        <button type="submit" method="Post">Submit</button>
+        <a href="/Home"><button type="submit" >Submit</button></a>
     </form>
 </body>
 </html>

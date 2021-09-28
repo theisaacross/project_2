@@ -13,47 +13,74 @@
     <table>
         <tr>
             <th>Sunday</th>
-            <% for (let i = 0; i < sunday.length; i++) {%>
-                    <td><a href="/Homes/<%=sunday[i].id%>"><%=sunday.id.name%></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'sunday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
         <tr>
             <th>Monday</th>
-            <% for (let i = 0; i < monday.length; i++) {%>
-                    <td><a href="/Homes/<%=monday[i].id%>"></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'monday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
         <tr>
             <th>Tuesday</th>
-            <% for (let i = 0; i < tuesday.length; i++) {%>
-                    <td><a href="/Homes/<%=tuesday[i].id%>"></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'tuesday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
         <tr>
             <th>Wednesday</th>
-            <% for (let i = 0; i < wednesday.length; i++) {%>
-                    <td><a href="/Homes/<%=wednesday[i].id%>"></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'wednesday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
         <tr>
             <th>Thursday</th>
-            <% for (let i = 0; i < thursday.length; i++) {%>
-                    <td><a href="/Homes/<%=thursday[i].id%>"></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'thursday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
         <tr>
             <th>Friday</th>
-            <% for (let i = 0; i < friday.length; i++) {%>
-                    <td><a href="/Homes/<%=friday[i].id%>"></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'friday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
         <tr>
             <th>Saturday</th>
-            <% for (let i = 0; i < saturday.length; i++) {%>
-                    <td><a href="/Homes/<%=saturday[i].id%>"></a></td>
+            <td>
+            <% for (let i = 0; i < events.length; i++) {%>
+                    <% if (events[i].weekday === 'saturday'){%>
+                            <a href="/Home/<%=events[i].id%>"><p><%=events[i].name%></p></a>
+                    <% } %> 
             <% } %> 
+            </td>
         </tr>
-
     </table>
 
 </body>

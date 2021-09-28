@@ -6,8 +6,11 @@ const eventSchema = new mongoose.Schema({
     },
     description: String,
     weekday:{
-        type: String
+        type: String,
+        lowercase: true
+
     }
 })
+const Events = mongoose.model('Events', eventSchema)
 
-module.exports = mongoose.model('Event', eventSchema) // call Event and eventSchema is the variable
+module.exports = Events // call Event and eventSchema is the variable
