@@ -32,7 +32,7 @@ db.on('error', (error) =>{
 
 // Middleware
 app.use(express.urlencoded({extended: false})) // lets us use req.body
-app.use(express.static('public')) // connects css
+// app.use(express.static('/public/')) // connects css
 app.use(methodOverride('_method')) // lets us use method override
 
 // Controllers
@@ -40,6 +40,6 @@ const eventController = require('./controllers/eventController') // connecting c
 app.use('/Home', eventController) // when at home, use eventController
 
 // Listener
-app.listen(PORT, () =>{
+app.listen(process.env.PORT || 3000, () =>{
     console.log("Listening at port: " + PORT)
 })
